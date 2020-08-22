@@ -15,6 +15,7 @@
 		7598DD0524EC931000147B3D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598DD0424EC931000147B3D /* PageViewController.swift */; };
 		75AE713824F114380026D183 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE713724F114380026D183 /* FirstViewController.swift */; };
 		75AE713A24F1145D0026D183 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE713924F1145D0026D183 /* SecondViewController.swift */; };
+		75AE713C24F118FD0026D183 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE713B24F118FD0026D183 /* SecondTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7598DD0424EC931000147B3D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		75AE713724F114380026D183 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		75AE713924F1145D0026D183 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		75AE713B24F118FD0026D183 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				75AE713924F1145D0026D183 /* SecondViewController.swift */,
+				75AE713B24F118FD0026D183 /* SecondTableViewCell.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				7598DD0524EC931000147B3D /* PageViewController.swift in Sources */,
 				75AE713A24F1145D0026D183 /* SecondViewController.swift in Sources */,
 				75AE713824F114380026D183 /* FirstViewController.swift in Sources */,
+				75AE713C24F118FD0026D183 /* SecondTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
