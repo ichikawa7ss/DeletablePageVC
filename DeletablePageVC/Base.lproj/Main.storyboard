@@ -10,10 +10,12 @@
         <!--Page View Controller-->
         <scene sceneID="r9f-XU-kuX">
             <objects>
-                <pageViewController restorationIdentifier="initial" storyboardIdentifier="initial" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="XPF-7j-yzw" customClass="PageViewController" customModule="DeletablePageVC" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="initia" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="XPF-7j-yzw" customClass="PageViewController" customModule="DeletablePageVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="4FP-UH-wwL"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bv4-Co-8ca" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="319" y="139"/>
+            <point key="canvasLocation" x="1228.985507246377" y="138.61607142857142"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="Ucj-5N-Dzc">
@@ -40,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ubK-3i-VFQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1151" y="139"/>
+            <point key="canvasLocation" x="2060.8695652173915" y="138.61607142857142"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="GBg-2b-wtx">
@@ -51,7 +53,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rED-eY-HYs">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="cRC-jm-Af0" customClass="SecondTableViewCell" customModule="DeletablePageVC" customModuleProvider="target">
@@ -65,11 +67,12 @@
                                                     <rect key="frame" x="20" y="11" width="140" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="label" destination="4ca-t9-npu" id="VI4-Cf-hqI"/>
                                         </connections>
@@ -81,12 +84,12 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rED-eY-HYs" firstAttribute="leading" secondItem="qna-3h-US4" secondAttribute="leading" id="gpl-ve-YzD"/>
-                            <constraint firstItem="rED-eY-HYs" firstAttribute="top" secondItem="zTV-hs-V1s" secondAttribute="top" id="l2C-WN-Esd"/>
+                            <constraint firstItem="rED-eY-HYs" firstAttribute="top" secondItem="qna-3h-US4" secondAttribute="top" id="l2C-WN-Esd"/>
                             <constraint firstItem="rED-eY-HYs" firstAttribute="trailing" secondItem="qna-3h-US4" secondAttribute="trailing" id="qnm-ii-cuk"/>
-                            <constraint firstAttribute="bottom" secondItem="rED-eY-HYs" secondAttribute="bottom" id="znG-ry-eeU"/>
+                            <constraint firstItem="qna-3h-US4" firstAttribute="bottom" secondItem="rED-eY-HYs" secondAttribute="bottom" id="znG-ry-eeU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qna-3h-US4"/>
                     </view>
@@ -96,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukG-MX-GqW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2060.8695652173915" y="138.61607142857142"/>
+            <point key="canvasLocation" x="2971.0144927536235" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
