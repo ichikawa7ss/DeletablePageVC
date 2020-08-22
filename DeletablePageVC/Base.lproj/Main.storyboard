@@ -94,7 +94,7 @@
                         <viewLayoutGuide key="safeArea" id="qna-3h-US4"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="rED-eY-HYs" id="1VN-ya-go2"/>
+                        <outlet property="tableView" destination="rED-eY-HYs" id="6ZW-Ks-fe9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukG-MX-GqW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

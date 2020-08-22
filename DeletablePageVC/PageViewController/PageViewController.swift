@@ -16,6 +16,16 @@ final class PageViewController: UIPageViewController {
         self.dataSource = self
     }
     
+    var scrollView: UIScrollView? {
+        if let v = self.view as? UIScrollView {
+            return v
+        }
+        for v in view.subviews where v is UIScrollView {
+            return v as? UIScrollView
+        }
+        return nil
+    }
+    
     func getFirst() -> FirstViewController {
         return storyboard!.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
     }
