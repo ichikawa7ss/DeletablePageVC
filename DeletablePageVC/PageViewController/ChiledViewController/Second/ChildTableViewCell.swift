@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondTableViewCell: UITableViewCell {
+class ChildTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var label: UILabel!
     

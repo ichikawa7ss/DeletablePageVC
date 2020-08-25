@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ChileTableViewController.swift
 //  DeletablePageVC
 //
 //  Created by ichikawa on 2020/08/22.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class SecondViewController: UIViewController {
+final class ChildTableViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
@@ -26,21 +26,21 @@ final class SecondViewController: UIViewController {
 }
 
 // MARK: - UITableViewDataSource
-extension SecondViewController: UITableViewDataSource {
+extension ChildTableViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.data.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SecondTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ChildTableViewCell
         cell.setData("No. \(String(self.data[indexPath.row]))")
         return cell
     }
 }
 
 // MARK: - Setup DeletableGesture
-extension SecondViewController {
+extension ChildTableViewController {
     
     /// TableViewに優先的に判定されるPanGestureを設定する
     private func handleTableViewDeletableGesture() {
@@ -74,7 +74,7 @@ extension SecondViewController {
 }
 
 // MARK: - UITableViewDelegate
-extension SecondViewController: UITableViewDelegate {
+extension ChildTableViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
@@ -89,7 +89,7 @@ extension SecondViewController: UITableViewDelegate {
 }
 
 // MARK: - UIGestureRecognizerDelegate
-extension SecondViewController: UIGestureRecognizerDelegate {
+extension ChildTableViewController: UIGestureRecognizerDelegate {
     
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         guard

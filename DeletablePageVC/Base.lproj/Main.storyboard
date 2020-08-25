@@ -18,10 +18,10 @@
             </objects>
             <point key="canvasLocation" x="1228.985507246377" y="138.61607142857142"/>
         </scene>
-        <!--First View Controller-->
+        <!--Chile Normal View Controller-->
         <scene sceneID="Ucj-5N-Dzc">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" id="Lzh-zi-EZQ" customClass="FirstViewController" customModule="DeletablePageVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" id="Lzh-zi-EZQ" customClass="ChileNormalViewController" customModule="DeletablePageVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zg6-s9-H6m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="2060.8695652173915" y="138.61607142857142"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Child Table View Controller-->
         <scene sceneID="GBg-2b-wtx">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="Szz-Jp-Wtb" customClass="SecondViewController" customModule="DeletablePageVC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondViewController" id="Szz-Jp-Wtb" customClass="ChildTableViewController" customModule="DeletablePageVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zTV-hs-V1s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,7 +57,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="cRC-jm-Af0" customClass="SecondTableViewCell" customModule="DeletablePageVC" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="cRC-jm-Af0" customClass="ChildTableViewCell" customModule="DeletablePageVC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cRC-jm-Af0" id="Wqx-SA-rdD">

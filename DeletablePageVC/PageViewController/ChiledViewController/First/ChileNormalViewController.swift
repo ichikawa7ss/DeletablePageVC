@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class FirstViewController: UIViewController {
+final class ChileNormalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

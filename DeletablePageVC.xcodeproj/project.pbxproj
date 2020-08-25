@@ -13,9 +13,9 @@
 		7598DCF824EC927F00147B3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7598DCF724EC927F00147B3D /* Assets.xcassets */; };
 		7598DCFB24EC927F00147B3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7598DCF924EC927F00147B3D /* LaunchScreen.storyboard */; };
 		7598DD0524EC931000147B3D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7598DD0424EC931000147B3D /* PageViewController.swift */; };
-		75AE713824F114380026D183 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE713724F114380026D183 /* FirstViewController.swift */; };
-		75AE713A24F1145D0026D183 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE713924F1145D0026D183 /* SecondViewController.swift */; };
-		75AE713C24F118FD0026D183 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE713B24F118FD0026D183 /* SecondTableViewCell.swift */; };
+		75AE713824F114380026D183 /* ChileNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE713724F114380026D183 /* ChileNormalViewController.swift */; };
+		75AE713A24F1145D0026D183 /* ChildTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE713924F1145D0026D183 /* ChildTableViewController.swift */; };
+		75AE713C24F118FD0026D183 /* ChildTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AE713B24F118FD0026D183 /* ChildTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		7598DCFA24EC927F00147B3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7598DCFC24EC927F00147B3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7598DD0424EC931000147B3D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		75AE713724F114380026D183 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		75AE713924F1145D0026D183 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		75AE713B24F118FD0026D183 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		75AE713724F114380026D183 /* ChileNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChileNormalViewController.swift; sourceTree = "<group>"; };
+		75AE713924F1145D0026D183 /* ChildTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildTableViewController.swift; sourceTree = "<group>"; };
+		75AE713B24F118FD0026D183 /* ChildTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 		75AE713524F113730026D183 /* First */ = {
 			isa = PBXGroup;
 			children = (
-				75AE713724F114380026D183 /* FirstViewController.swift */,
+				75AE713724F114380026D183 /* ChileNormalViewController.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -102,8 +102,8 @@
 		75AE713624F1137C0026D183 /* Second */ = {
 			isa = PBXGroup;
 			children = (
-				75AE713924F1145D0026D183 /* SecondViewController.swift */,
-				75AE713B24F118FD0026D183 /* SecondTableViewCell.swift */,
+				75AE713924F1145D0026D183 /* ChildTableViewController.swift */,
+				75AE713B24F118FD0026D183 /* ChildTableViewCell.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -182,9 +182,9 @@
 				7598DCEF24EC927C00147B3D /* AppDelegate.swift in Sources */,
 				7598DCF124EC927C00147B3D /* SceneDelegate.swift in Sources */,
 				7598DD0524EC931000147B3D /* PageViewController.swift in Sources */,
-				75AE713A24F1145D0026D183 /* SecondViewController.swift in Sources */,
-				75AE713824F114380026D183 /* FirstViewController.swift in Sources */,
-				75AE713C24F118FD0026D183 /* SecondTableViewCell.swift in Sources */,
+				75AE713A24F1145D0026D183 /* ChildTableViewController.swift in Sources */,
+				75AE713824F114380026D183 /* ChileNormalViewController.swift in Sources */,
+				75AE713C24F118FD0026D183 /* ChildTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

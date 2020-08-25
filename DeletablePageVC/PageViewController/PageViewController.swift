@@ -26,12 +26,12 @@ final class PageViewController: UIPageViewController {
         return nil
     }
     
-    func getFirst() -> FirstViewController {
-        return storyboard!.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
+    func getFirst() -> ChileNormalViewController {
+        return storyboard!.instantiateViewController(withIdentifier: "FirstViewController") as! ChileNormalViewController
     }
     
-    func getSecond() -> SecondViewController {
-        return storyboard!.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+    func getSecond() -> ChildTableViewController {
+        return storyboard!.instantiateViewController(withIdentifier: "SecondViewController") as! ChildTableViewController
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,7 +42,7 @@ final class PageViewController: UIPageViewController {
 extension PageViewController : UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        if viewController.isKind(of: SecondViewController.self) {
+        if viewController.isKind(of: ChildTableViewController.self) {
             // 2 -> 1
             return getFirst()
         } else {
@@ -52,7 +52,7 @@ extension PageViewController : UIPageViewControllerDataSource {
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        if viewController.isKind(of: FirstViewController.self) {
+        if viewController.isKind(of: ChileNormalViewController.self) {
             // 1 -> 2
             return getSecond()
         } else {
