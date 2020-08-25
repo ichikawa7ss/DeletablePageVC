@@ -39,6 +39,40 @@ extension SecondViewController: UITableViewDataSource {
     }
 }
 
+// MARK: - Setup DeletableGesture
+extension SecondViewController {
+    
+    /// TableViewに優先的に判定されるPanGestureを設定する
+    private func handleTableViewDeletableGesture() {
+        // 初期化
+        self.initializeGesture()
+        
+        let pageController = self.parent as! PageViewController
+        
+        // ①tableViewを内包するVCにUIPanGestureRecognizerを加える
+        self.deletableGestureRecognizer = UIPanGestureRecognizer(target: self, action: nil)
+        self.deletableGestureRecognizer?.delaysTouchesBegan = true
+        self.deletableGestureRecognizer?.cancelsTouchesInView = false
+        self.deletableGestureRecognizer?.delegate = self
+        self.tableView.addGestureRecognizer(self.deletableGestureRecognizer!)
+        
+        pageController.scrollView?.canCancelContentTouches = false
+        // ②tableViewのGestureが認識されたときにpageViewControllerのGestureより優先的に評価するように設定
+        pageController.scrollView?.panGestureRecognizer.require(toFail: self.deletableGestureRecognizer!)
+    }
+    
+    /// セル削除用のTapGestureの初期化
+    private func initializeGesture() {
+        guard let gesture = self.deletableGestureRecognizer,
+            let pageController = self.parent as? PageViewController else {
+                return
+        }
+        self.tableView.removeGestureRecognizer(gesture)
+        self.deletableGestureRecognizer = nil
+        pageController.scrollView?.canCancelContentTouches = true
+    }
+}
+
 // MARK: - UITableViewDelegate
 extension SecondViewController: UITableViewDelegate {
     
@@ -81,37 +115,5 @@ extension SecondViewController: UIGestureRecognizerDelegate {
     
     func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return otherGestureRecognizer.view == self.tableView
-    }
-}
-
-// MARK: - Setup DeletableGesture
-extension SecondViewController {
-    
-    /// TableViewに優先的に判定されるPanGestureを設定する
-    private func handleTableViewDeletableGesture() {
-        // 初期化
-        self.initializeGesture()
-        
-        let pageController = self.parent as! PageViewController
-        
-        self.deletableGestureRecognizer = UIPanGestureRecognizer(target: self, action: nil)
-        self.deletableGestureRecognizer?.delaysTouchesBegan = true
-        self.deletableGestureRecognizer?.cancelsTouchesInView = false
-        self.deletableGestureRecognizer?.delegate = self
-        self.tableView.addGestureRecognizer(self.deletableGestureRecognizer!)
-        
-        pageController.scrollView?.canCancelContentTouches = false
-        pageController.scrollView?.panGestureRecognizer.require(toFail: self.deletableGestureRecognizer!)
-    }
-    
-    /// セル削除用のTapGestureの初期化
-    private func initializeGesture() {
-        guard let gesture = self.deletableGestureRecognizer,
-            let pageController = self.parent as? PageViewController else {
-                return
-        }
-        self.tableView.removeGestureRecognizer(gesture)
-        self.deletableGestureRecognizer = nil
-        pageController.scrollView?.canCancelContentTouches = true
     }
 }
